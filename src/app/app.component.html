@@ -1,0 +1,20 @@
+<main>
+    <div class="title">
+        <p> {{page}}</p>    
+    </div>
+    <div class="address"> 
+        <p class="block">Address</p>
+        <div class="bar">
+            <p>\C:\User\Program Files\Web Page </p>
+            <input [ngStyle]="stylewidth" id="inputRoute" type="text" class="editable" (onchange)="InputChange()" value="{{page}}">
+        </div>
+        <button class="block go" (click)="Route()">go</button>
+    </div>
+    <div class="row">
+        <div class="routes">
+            <p class="block">Pages</p>
+            <app-navbar></app-navbar> 
+        </div>
+        <div class="main"><router-outlet class="router" /> </div>
+    </div>
+</main>

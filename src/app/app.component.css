@@ -1,0 +1,157 @@
+/* ====== MAIN CONTAINER ====== */
+main {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 15vh;
+  margin-bottom: 0;
+  bottom: 5vh;
+  border: 3px solid #e6e1db;
+  background-color: #c0c0c0;
+  box-shadow: 2px 2px black;
+}
+
+/* ====== TITLE BAR ====== */
+.title {
+  background-image: linear-gradient(to right, #180a6c, #bcd9f3);
+  margin: 0;
+  padding: 0;
+}
+
+.title p {
+  font-size: 4rem;
+  margin: 0 5px;
+  color: white;
+}
+
+/* ====== ADDRESS BAR ====== */
+.address {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: linear-gradient(to top, #d4cdc4, #e6e1db);
+  border: 3px solid #a7a4a1;
+}
+
+/* Address label */
+.address p.block {
+  width: 12%;
+  height: 2rem;
+  text-align: center;
+}
+
+/* Address text fields */
+.address p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  direction: rtl;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+/* ====== BAR SECTION ====== */
+.bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 2rem;
+  width: 83%;
+  background-color: white;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+.bar p,
+.bar input {
+  display: inline;
+  border: none;
+  font-family: inherit;
+  font-size: 2rem;
+  line-height: 2.2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Editable input styling */
+.bar input.editable {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.bar input.editable:hover {
+  text-decoration: underline;
+  cursor: text;
+}
+/* ====== BLOCKS ====== */
+.block {
+  margin: 0;
+  text-align: center;
+  background-color: #d4cdc4;
+  box-shadow: inset 0 2px #e6e1db;
+  font-size: 2rem;
+}
+
+.block img {
+  display: inline;
+  height: 100%;
+}
+
+/* ====== GO BUTTON ====== */
+.go {
+  width: 5%;
+  height: 2rem;
+  text-align: right;
+  border: none;
+  background-repeat: no-repeat;
+  background-position-y: center ;
+  background-size: 50%;
+  line-height: 0;
+}
+.go:hover{
+   background-color: #a19b94;
+  box-shadow: inset 0 2px #b3aeaa;
+}
+
+/* ====== ROW LAYOUT ====== */
+.row {
+  display: flex;
+  flex-direction: row;
+  height: 70vh;
+}
+
+/* ====== ROUTES PANEL ====== */
+.routes {
+  width: 12%;
+  border: 2px solid #b7b6b5;;
+  background-color: white;
+}
+
+/* ====== INNER MAIN SECTION ====== */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 88%;
+  margin: 1%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 100%;
+}
+.main > router-outlet {
+  width: 0%;
+  height: 0%;
+  flex: 0;
+  display: none;
+}
+.main > * {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+}

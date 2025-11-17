@@ -1,0 +1,15 @@
+<nav class="navTree">
+  <div class="main">
+    <a routerLink="/mainpage">Main Page</a>
+  </div>
+
+  <div class="branchList">
+    <div class="branch" *ngFor="let route of Routes; let last = last">
+      <div class="connector">
+        <div class="vertical" [class.last]="last"></div>
+        <div class="horizontal"></div>
+      </div>
+      <a routerLink="/{{route}}">{{ route }}</a>
+    </div>
+  </div>
+</nav>

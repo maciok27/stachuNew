@@ -1,0 +1,64 @@
+<div class="view">
+    <canvas    
+        #canvas
+        class="canvas"
+        (mousedown)="startDrawing($event)"
+        (mouseup)="stopDrawing()"
+        (mousemove)="draw($event)">
+    </canvas>
+    <div class="paints">
+        <div class="row">
+            <div class="column">
+                <input type="radio" name="colors" (change)="changeColor()">
+            </div>
+            <div class="column">
+                <input type="radio" name="colors" (change)="changeColor()">
+            </div>
+        </div>
+         <div class="row">
+            <div class="column">
+                <input type="radio" name="colors" (change)="changeColor()">
+            </div>
+            <div class="column">
+                <input type="radio" name="colors" (change)="changeColor()">
+            </div>
+        </div>
+          <div class="row">
+            <div class="column">
+                <input type="radio" name="colors" (change)="changeColor()">
+            </div>
+            <div class="column">
+                <input type="radio" name="colors" (change)="changeColor()">
+            </div>
+        </div>
+          <div class="row">
+            <div class="column">
+                <input type="radio" name="colors" (change)="changeColor()">
+            </div>
+            <div class="column">
+                <input type="radio" name="colors" (change)="changeColor()">
+            </div>
+        </div>
+          <div class="row">
+            <div class="column">
+                <input type="radio" name="colors" (change)="changeColor()">
+            </div>
+            <div class="column">
+                <input type="radio" name="colors" (change)="changeColor()">
+            </div>
+        </div>
+          <div class="row">
+            <div class="column">
+                <input type="radio" name="colors" (change)="changeColor()">
+            </div>
+            <div class="column">
+                <input type="radio" name="colors" (change)="changeColor()">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <input type="color" name="colorpicker" disabled (change)="changeColorPicker()">
+            </div>
+        </div>
+    </div>
+</div>
